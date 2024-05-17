@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>226M1A4213</title>
+<style>
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Improved menu bar styles */
+nav {
+  display: flex;
+  align-items: center;
+ /* Distribute space between items */
+  padding: 15px 20px; /* Increased padding for more space */
+  background-color: #2C3E50; /* Darker blue-grey */
+  color: white;
+  border-radius: 10px; /* Smaller border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500; /* Semi-bold */
+  padding: 10px 20px; /* More padding for larger clickable area */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for subtle animation */
+}
+
+nav a:hover {
+  background-color: rgba(44, 62, 80, 0.7); /* Darker hover effect */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  min-width: 350px; /* Smaller width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2C3E50; /* Darker text color */
+  padding: 12px 20px; /* More padding for better touch targets */
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform */
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(236, 240, 241, 0.8); /* Light grey hover */
+  transform: translateX(5px); /* Slight rightward movement on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  padding: 60px 20px; /* Increased top padding for more space */
+
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 2.5em; /* Larger font size */
+  color: #2C3E50; /* Darker heading color */
+}
+
+.content p {
+  line-height: 1.8; /* Increased line height for better readability */
+  color: #7F8C8D; /* Grey text */
+}
+
+section {
+  background-color: white;
+  border-radius: 10px; /* Smaller border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 30px; /* More padding */
+  margin: 30px 0; /* Increased margin */
+}
+
+.department-title {
+  margin-bottom: 15px; /* Increased bottom margin */
+  font-size: 1.5em; /* Larger font size */
+  color: #34495E; /* Dark blue-grey color */
+}
+
+.department-info {
+  font-weight: 600; /* Semi-bold */
+  color: #34495E; /* Consistent color with title */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to start */
+  }
+
+  nav a {
+    padding: 10px; /* Reduced padding for smaller screens */
+    margin-bottom: 5px; /* Added margin for spacing */
+  }
+
+  .content {
+    padding: 40px 10px; /* Reduced padding for smaller screens */
+  }
+
+  section {
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin: 15px 0; /* Reduced margin for smaller screens */
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="home.html">Home</a>
+  <a href="login.html">Login</a>
+  <a href="register.html">Register</a>
+  <a href="aboutus.html">About Me</a>
+  <div class="dropdown">
+    <a href="#">Lab</a>
+    <div class="dropdown-content">
+      <a href="intro.html">1. Introduction to JavaScript</a>
+      <a href="#">2. Applying JavaScript</a>
+      <a href="internal.html">Internal Java</a>
+      <a href="external.html">External Java</a>
+      <a href="js.html">3. Understanding JS Syntax</a>
+      <a href="doc.html">4. Introduction to Document and Window Object</a>
+      <a href="var.html">5. Variables and operators</a>
+      <a href="dt&nt.html">6. Data Types and NUM Type coversions</a>
+      <a href="math.html">7.Math and String Manipulation</a>
+      <a href="obj.html">8.Objects and Arrays</a>
+      <a href="date.html">9.Date and Time</a>
+      <a href="con.html">10.Conditional Statements</a>
+      <a href="switch.html">11.Switch Case</a>
+      <a href="loop.html">12.Looping in JS</a>
+      <a href="func.html">13.Functions</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+    <div class="content">
+       <section>
+<h2>Variables and Operators</h2>
+
+    <h2>Introduction to Variables</h2>
+<span style="font-size: 20px;">
+    <p>In JavaScript, variables are used to store data that can be referenced and manipulated throughout the program. Unlike some other programming languages, JavaScript does not require explicit declaration of variable types. You declare variables using the <code>var</code>, <code>let</code>, or <code>const</code> keyword.</p>
+
+    <pre><code>
+        // Declaring variables
+        var myVariable; // Declaring a variable without initializing it
+        let age = 25;   // Declaring and initializing a variable using let
+        const PI = 3.14; // Declaring and initializing a constant variable using const
+    </code></pre>
+</span>
+    <h2>Data Types</h2>
+<span style="font-size: 20px;">
+    <p>JavaScript supports several data types, including:</p>
+    <ul>
+        <li>Number: Represents numeric data. It includes integers, floats, and NaN (Not-a-Number).</li>
+        <li>String: Represents text data enclosed within single ('') or double ("") quotes.</li>
+        <li>Boolean: Represents true or false values.</li>
+        <li>Null: Represents an empty value.</li>
+        <li>Undefined: Represents a variable that has been declared but not initialized.</li>
+        <li>Object: Represents a collection of key-value pairs.</li>
+        <li>Symbol: Represents unique identifiers.</li>
+    </ul>
+</span>
+    <h2>Operators</h2>
+<span style="font-size: 20px;">
+    <p>JavaScript provides various operators for performing operations on variables and values:</p>
+    <ul>
+        <li>Arithmetic Operators: Used to perform arithmetic operations like addition, subtraction, multiplication, division, and modulus.</li>
+        <li>Assignment Operators: Used to assign values to variables.</li>
+        <li>Comparison Operators: Used to compare values.</li>
+        <li>Logical Operators: Used to combine or modify conditions.</li>
+    </ul>
+</span>
+    <h2>Variable Scope</h2>
+<span style="font-size: 20px;">
+    <p>Variables in JavaScript have function-level scope with the <code>var</code> keyword and block-level scope with the <code>let</code> and <code>const</code> keywords. Variables declared with <code>var</code> are function-scoped, while variables declared with <code>let</code> and <code>const</code> are block-scoped.</p>
+
+    <pre><code>
+        {
+            var localVar = 'Function scoped'; // var is function-scoped
+            let blockVar = 'Block scoped';    // let is block-scoped
+            const constantVar = 'Constant';   // const is block-scoped
+        }
+        console.log(localVar); // Output: Function scoped
+        console.log(blockVar); // Error: blockVar is not defined
+        console.log(constantVar); // Error: constantVar is not defined
+    </code></pre>
+</span>
+</section>	
+    </div>
+</div>
+
+</body>
+</html>

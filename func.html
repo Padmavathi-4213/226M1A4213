@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>226M1A0533</title>
+<style>
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Improved menu bar styles */
+nav {
+  display: flex;
+  align-items: center;
+ /* Distribute space between items */
+  padding: 15px 20px; /* Increased padding for more space */
+  background-color: #2C3E50; /* Darker blue-grey */
+  color: white;
+  border-radius: 10px; /* Smaller border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500; /* Semi-bold */
+  padding: 10px 20px; /* More padding for larger clickable area */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for subtle animation */
+}
+
+nav a:hover {
+  background-color: rgba(44, 62, 80, 0.7); /* Darker hover effect */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  min-width: 350px; /* Smaller width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2C3E50; /* Darker text color */
+  padding: 12px 20px; /* More padding for better touch targets */
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform */
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(236, 240, 241, 0.8); /* Light grey hover */
+  transform: translateX(5px); /* Slight rightward movement on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  padding: 60px 20px; /* Increased top padding for more space */
+  
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 2.5em; /* Larger font size */
+  color: #2C3E50; /* Darker heading color */
+}
+
+.content p {
+  line-height: 1.8; /* Increased line height for better readability */
+  color: #7F8C8D; /* Grey text */
+}
+
+section {
+  background-color: white;
+  border-radius: 10px; /* Smaller border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 30px; /* More padding */
+  margin: 30px 0; /* Increased margin */
+}
+
+.department-title {
+  margin-bottom: 15px; /* Increased bottom margin */
+  font-size: 1.5em; /* Larger font size */
+  color: #34495E; /* Dark blue-grey color */
+}
+
+.department-info {
+  font-weight: 600; /* Semi-bold */
+  color: #34495E; /* Consistent color with title */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to start */
+  }
+
+  nav a {
+    padding: 10px; /* Reduced padding for smaller screens */
+    margin-bottom: 5px; /* Added margin for spacing */
+  }
+
+  .content {
+    padding: 40px 10px; /* Reduced padding for smaller screens */
+  }
+
+  section {
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin: 15px 0; /* Reduced margin for smaller screens */
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="home.html">Home</a>
+  <a href="login.html">Login</a>
+  <a href="register.html">Register</a>
+  <a href="aboutus.html">About Me</a>
+  <div class="dropdown">
+    <a href="#">Lab</a>
+    <div class="dropdown-content">
+      <a href="intro.html">1. Introduction to JavaScript</a>
+      <a href="#">2. Applying JavaScript</a>
+      <a href="internal.html">Internal Java</a>
+      <a href="external.html">External Java</a>
+      <a href="js.html">3. Understanding JS Syntax</a>
+      <a href="doc.html">4. Introduction to Document and Window Object</a>
+      <a href="var.html">5. Variables and operators</a>
+      <a href="dt&nt.html">6. Data Types and NUM Type coversions</a>
+      <a href="math.html">7.Math and String Manipulation</a>
+      <a href="obj.html">8.Objects and Arrays</a>
+      <a href="date.html">9.Date and Time</a>
+      <a href="con.html">10.Conditional Statements</a>
+      <a href="switch.html">11.Switch Case</a>
+      <a href="loop.html">12.Looping in JS</a>
+      <a href="func.html">13.Functions</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+    <div class="content">
+       <section>
+<h2>Functions</h2>
+
+    <h2>Introduction to Functions</h2>
+<span style="font-size: 20px;">
+    <p>Functions are one of the fundamental building blocks in JavaScript. They allow you to encapsulate a block of code that can be executed and reused throughout your program. Functions can accept input parameters and return values.</p>
+</span>
+    <h2>Defining Functions</h2>
+<span style="font-size: 20px;">
+    <p>You can define functions using the <code>function</code> keyword followed by the function name, a list of parameters enclosed in parentheses, and the function body enclosed in curly braces.</p>
+    <pre><code>
+        // Defining a function
+        function greet(name) {
+            return 'Hello, ' + name + '!';
+        }
+    </code></pre>
+</span>
+    <h2>Calling Functions</h2>
+<span style="font-size: 20px;">
+    <p>To call a function, simply use the function name followed by parentheses. You can pass arguments to the function within the parentheses.</p>
+    <pre><code>
+        // Calling a function
+        let message = greet('John');
+        console.log(message); // Output: Hello, John!
+    </code></pre>
+</span>
+    <h2>Function Parameters and Arguments</h2>
+<span style="font-size: 20px;">
+    <p>Functions can accept parameters, which are placeholders for values that the function expects to receive when it is called. Arguments are the actual values passed to the function when it is called.</p>
+    <pre><code>
+        // Function with parameters
+        function add(a, b) {
+            return a + b;
+        }
+        let result = add(5, 3);
+        console.log(result); // Output: 8
+    </code></pre>
+</span>
+    <h2>Returning Values</h2>
+<span style="font-size: 20px;">
+    <p>Functions can return values using the <code>return</code> keyword. Once a function encounters a <code>return</code> statement, it immediately exits, and the value is returned to the caller.</p>
+    <pre><code>
+        // Function returning a value
+        function multiply(a, b) {
+            return a * b;
+        }
+        let product = multiply(4, 6);
+        console.log(product); // Output: 24
+    </code></pre>
+</span>
+    <h2>Anonymous Functions</h2>
+<span style="font-size: 20px;">
+    <p>JavaScript also supports anonymous functions, which are functions without a name. They are often used as arguments to other functions or assigned to variables.</p>
+    <pre><code>
+        // Anonymous function assigned to a variable
+        let greet = function(name) {
+            return 'Hello, ' + name + '!';
+        };
+        console.log(greet('Jane')); // Output: Hello, Jane!
+    </code></pre>
+</span>
+</section>    
+    </div>
+</div>
+</body>
+</html>

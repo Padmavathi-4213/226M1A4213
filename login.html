@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>226M1A4213</title>
+<style>
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Improved menu bar styles */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #2C3E50; /* Darker blue-grey */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500; /* Semi-bold */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for subtle animation */
+}
+
+nav a:hover {
+  background-color: rgba(44, 62, 80, 0.7); /* Darker hover effect */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  min-width: 350px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2C3E50; /* Darker text color */
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform */
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(236, 240, 241, 0.8); /* Light grey hover */
+  transform: translateX(5px); /* Slight rightward movement on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  padding: 60px 20px; /* Increased top padding for more space */
+  
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 2.5em; /* Larger font size */
+  color: #2C3E50; /* Darker heading color */
+}
+
+.content p {
+  line-height: 1.8; /* Increased line height for better readability */
+  color: #7F8C8D; /* Grey text */
+}
+
+section {
+  background-color: white;
+  border-radius: 10px; /* Smaller border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 30px; /* More padding */
+  margin: 30px 0; /* Increased margin */
+}
+
+.department-title {
+  margin-bottom: 15px; /* Increased bottom margin */
+  font-size: 1.5em; /* Larger font size */
+  color: #34495E; /* Dark blue-grey color */
+}
+
+.department-info {
+  font-weight: 600; /* Semi-bold */
+  color: #34495E; /* Consistent color with title */
+}
+
+/* Login container styles */
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Stretch login section to fill viewport height */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 10px; /* Add rounded corners for a softer look */
+  backdrop-filter: blur(5px) grayscale(0.1); /* Blur background slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.container1 form {
+  background-color: white; /* Opaque white form background */
+  padding: 40px;
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle outer shadow */
+  text-align: center;
+}
+
+.container1 h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #2C3E50; /* Darker text color */
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* Inner glow effect */
+}
+
+.container1 label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin for spacing */
+  font-weight: 500; /* Semi-bold */
+  color: #7F8C8D; /* Lighter text color */
+}
+
+.container1 input[type="text"],
+.container1 input[type="password"] {
+  width: 100%;
+  padding: 15px; /* Increased padding for better touch targets */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Smaller border radius */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.container1 input[type="text"]:hover,
+.container1 input[type="password"]:hover {
+  border-color: #2C3E50; /* Change border color on hover */
+}
+
+.container1 button {
+  background-color: #2C3E50; /* Same color as menu bar */
+  color: white;
+  padding: 15px 30px; /* Increased padding for better touch targets */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.container1 button:hover {
+  background-color: #1A242F; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to start */
+  }
+
+  nav a {
+    padding: 10px; /* Reduced padding for smaller screens */
+    margin-bottom: 5px; /* Added margin for spacing */
+  }
+
+  .content {
+    padding: 40px 10px; /* Reduced padding for smaller screens */
+  }
+
+  section {
+    padding: 20px; /* Reduced padding for smaller screens */
+    margin: 15px 0; /* Reduced margin for smaller screens */
+  }
+
+  .container1 {
+    padding: 20px; /* Added padding for smaller screens */
+  }
+
+  .container1 form {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="home.html">Home</a>
+  <a href="login.html">Login</a>
+  <a href="register.html">Register</a>
+  <a href="aboutus.html">About Me</a>
+  <div class="dropdown">
+    <a href="#">Lab</a>
+    <div class="dropdown-content">
+      <a href="intro.html">1. Introduction to JavaScript</a>
+      <a href="#">2. Applying JavaScript</a>
+      <a href="internal.html">Internal Java</a>
+      <a href="external.html">External Java</a>
+      <a href="js.html">3. Understanding JS Syntax</a>
+      <a href="doc.html">4. Introduction to Document and Window Object</a>
+      <a href="var.html">5. Variables and operators</a>
+      <a href="dt&nt.html">6. Data Types and NUM Type coversions</a>
+      <a href="math.html">7.Math and String Manipulation</a>
+      <a href="obj.html">8.Objects and Arrays</a>
+      <a href="date.html">9.Date and Time</a>
+      <a href="con.html">10.Conditional Statements</a>
+      <a href="switch.html">11.Switch Case</a>
+      <a href="loop.html">12.Looping in JS</a>
+      <a href="func.html">13.Functions</a>
+            </div>
+        </li>
+    </ul>
+</nav>    
+</div>
+<div class="container1" "section">
+  <form>
+    <h2>Login</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <input type="checkbox" id="showPassword" onchange="togglePasswordVisibility()">
+        <label for="showPassword">Show Password</label>
+
+    <button type="button" onclick="validateLogin()">Login</button>
+  </form>
+</div>
+
+<script>
+function togglePasswordVisibility() {
+    var passwordField = document.getElementById('password');
+    var showPasswordCheckbox = document.getElementById('showPassword');
+
+    if (showPasswordCheckbox.checked) {
+      passwordField.type = 'text';
+    } else {
+      passwordField.type = 'password';
+    }
+}
+   function validateLogin() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Perform your validation logic here
+        // For a real application, use secure authentication methods and communicate with a server.
+
+        if (username === 'demo' && password === 'password') {
+            alert('Login successful!'); // Replace with your redirect or other actions
+        } else {
+            alert('Invalid credentials. Please try again.');
+        }
+    }
+</script>
+</body>
+</style>
+</head>
